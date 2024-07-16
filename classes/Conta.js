@@ -4,10 +4,13 @@ class Conta {
         this.saldo = saldo
     }
 
+    
     sacar(valor) {
+        //Validando um valor de entrada
         if (!valor) {
             console.error('Digite um valor válido!')
         } else {
+            //Checando se é menor que o saldo
             if (valor <= this.saldo) {
                 this.saldo = this.saldo - valor
             } else {
@@ -17,6 +20,7 @@ class Conta {
     }
 
     depositar(valor) {
+         //Validando um valor de entrada
         if (!valor) {
             console.error('Digite um valor válido!')
         } else {
